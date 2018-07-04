@@ -1,6 +1,4 @@
 
-[TOC]
-
 ##开源包打补丁
 1) quilt new 001-xxxx.patch
 2) quilt add xx/old.xx
