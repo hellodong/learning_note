@@ -1,8 +1,7 @@
-测试用例
+learning tips
 ===
 
-##测试1  
+1. openwert  
+2. vim
+3. git
 
-##测试2  
-
-##测试3  
