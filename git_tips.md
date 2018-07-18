@@ -4,3 +4,18 @@
 2) git tag 标签                             创建标签
 3) git checkout -b branch origin/branch     拉取远程分支
 4) git push --tags                          将本地分支推送到服务器
+
+
+## 删除远程分支
+### git v1.7.0 之后
+git push origin --delete <branchName>
+### git v1.7.0 之前
+删除远程分支（推送一个空分支到远程分支，其实相当于删除远程分支)
+## 删除远程tag
+### git v1.7.0 之后
+git push origin --delete tag <tagName>
+### git v1.7.0 之前
+git push origin :refs/tags/<tagname>
+
+
+
