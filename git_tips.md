@@ -6,16 +6,25 @@
 4) git push --tags                          将本地分支推送到服务器
 
 
+## 添加远程本地分支
+git push origin <branchName>
+
 ## 删除远程分支
 ### git v1.7.0 之后
 git push origin --delete <branchName>
 ### git v1.7.0 之前
-删除远程分支（推送一个空分支到远程分支，其实相当于删除远程分支)
+删除远程分支（推送一个空分支到远程分支，其实相当于删除远程分支)  
+
 ## 删除远程tag
 ### git v1.7.0 之后
 git push origin --delete tag <tagName>
 ### git v1.7.0 之前
 git push origin :refs/tags/<tagname>
+
+## 获取当前tag
+git describe --long --dirty
+
+
 
 
 
