@@ -5,6 +5,8 @@
 3) git checkout -b branch origin/branch     拉取远程分支
 4) git push --tags                          将本地分支推送到服务器
 
+## 拉取远程分支
+git checkout -b branch origin/branch
 
 ## 添加远程本地分支
 git push origin <branchName>
@@ -23,6 +25,9 @@ git push origin :refs/tags/<tagname>
 
 ## 获取当前tag
 git describe --long --dirty
+
+## 取消git add
+git add 后，有相关文件暂存unstage, git reset HEAD <file> 取消暂存
 
 
 
