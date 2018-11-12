@@ -1,9 +1,8 @@
 
-
-1) git tag -d 标签                          删除
-2) git tag 标签                             创建标签
-3) git checkout -b branch origin/branch     拉取远程分支
-4) git push --tags                          将本地分支推送到服务器
+1) git tag -d 标签                          删除<br>
+2) git tag 标签                             创建标签<br>
+3) git checkout -b branch origin/branch     拉取远程分支<br>
+4) git push --tags                          将本地分支推送到服务器<br>
 
 ## 拉取远程分支
 git checkout -b branch origin/branch
@@ -28,6 +27,12 @@ git describe --long --dirty
 
 ## 取消git add
 git add 后，有相关文件暂存unstage, git reset HEAD <file> 取消暂存
+
+## git项目转移
+git remote remove origin  
+git remote add origin [GIT URL]  
+git remote -u origin master  
+上述步骤如果再还原到之前git服务器可能会有问题，还没有尝试过。
 
 
 
