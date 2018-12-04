@@ -9,6 +9,10 @@
 ## 添加远程本地分支
 git push origin <branchName>
 
+##　拉取本地远程分支
+git checkout --track origin/<branchname>
+git checkout -b <local_branchname> origin/<branchname>
+
 ## 删除远程分支
 ### git v1.7.0 之后
 git push origin --delete <branchName>
@@ -23,6 +27,9 @@ git push origin :refs/tags/<tagname>
 
 ## 获取当前tag
 git describe --long --dirty
+
+## 获取某个tag的注释
+git tag -l '<tagname>' -n9999
 
 
 
