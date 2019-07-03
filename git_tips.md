@@ -7,6 +7,10 @@
 ## 拉取远程分支
 git checkout -b branch origin/branch
 
+## 拉取远程tag
+git fetch -t  
+git fetch --tag
+
 ## 添加远程本地分支
 git push origin <branchName>
 
@@ -35,8 +39,8 @@ git tag -l '<tagname>' -n9999
 git add 后，有相关文件暂存unstage, git reset HEAD <file> 取消暂存
 
 ## 本地向服务器推送tag
-git push --tags 或者 git push origin --tags  推送所有tags到服务器 <br>
-git push origin <tagName>  推送某个分支到服务器<br>
+1. git push --tags 或者 git push origin --tags  推送所有tags到服务器 <br>
+2. git push origin <tagName>  推送某个分支到服务器<br>
 
 ## git项目转移
 git remote remove origin  
